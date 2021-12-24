@@ -114,3 +114,8 @@ In the depth maps generated above in figure 8, the objects closest to the vantag
 * Wonka, I. A. (n.d.). High Quality Monocular Depth Estimation via Transfer Learning. CoRR. Retrieved from http://arxiv.org/abs/1812.11941
 
 * https://github.com/dwofk/fast-depth
+
+* author      = {{Wofk, Diana and Ma, Fangchang and Yang, Tien-Ju and Karaman, Sertac and Sze, Vivienne}},
+	title       = {{FastDepth: Fast Monocular Depth Estimation on Embedded Systems}},
+	booktitle   = {{IEEE International Conference on Robotics and Automation (ICRA)}},
+	year        = {{2019}}
