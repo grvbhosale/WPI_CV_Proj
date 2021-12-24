@@ -31,11 +31,11 @@ Each image pair in the training data is encoded as a.h5 file, which contains bot
 
 # Methodology
  
- In this section, we describe the network architecture followed by justification for the choice behind the network.
+ In this section, we describe the network architecture followed by justification for the choice behind the network[fastdepth].Our model is a variant of fastdepth.
 
 ![archi](https://user-images.githubusercontent.com/18104407/146618637-16aaa2a5-666b-45dd-b208-654d986fe3fc.png)
 
-Our network is a fully convolutional encoder-decoder architecture. The encoder performs depth-wise separable convolutions and extracts features from the input image. The output of the MobileNet encoder is fed to the decoder, where the feature maps  are upsampled  at  each  stage  and  finally  give  the output  depth  map. The feature  maps  extracted  at  each layer of  the encoder  are fed  to the corresponding  decoder  of  appropriate  feature  map  size using  skip  connections. These feature maps from the encoders enable the decoder to get spatial information lost during the propagation and help in recovering fine-grained details. Finally, we use 1x1  convolution at the end to get the Dense Depth Map. The light-weight and low latency nature of the architecture helped us achieve 30fps real-time dense depth  map  playback, which can  be  used  in  applications such as mobile robotics.
+Our network[fastdepth] is a fully convolutional encoder-decoder architecture. The encoder performs depth-wise separable convolutions and extracts features from the input image. The output of the MobileNet encoder is fed to the decoder, where the feature maps  are upsampled  at  each  stage  and  finally  give  the output  depth  map. The feature  maps  extracted  at  each layer of  the encoder  are fed  to the corresponding  decoder  of  appropriate  feature  map  size using  skip  connections. These feature maps from the encoders enable the decoder to get spatial information lost during the propagation and help in recovering fine-grained details. Finally, we use 1x1  convolution at the end to get the Dense Depth Map. The light-weight and low latency nature of the architecture helped us achieve 30fps real-time dense depth  map  playback, which can  be  used  in  applications such as mobile robotics.
 
 # Encoder Network
 
@@ -115,7 +115,4 @@ In the depth maps generated above in figure 8, the objects closest to the vantag
 
 * https://github.com/dwofk/fast-depth
 
-* author      = {{Wofk, Diana and Ma, Fangchang and Yang, Tien-Ju and Karaman, Sertac and Sze, Vivienne}},
-	title       = {{FastDepth: Fast Monocular Depth Estimation on Embedded Systems}},
-	booktitle   = {{IEEE International Conference on Robotics and Automation (ICRA)}},
-	year        = {{2019}}
+* http://fastdepth.mit.edu/
